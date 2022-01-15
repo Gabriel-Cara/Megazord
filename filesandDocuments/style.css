@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(/fotos/Vetormegazord-FilesAndDocuments.svg) no-repeat center center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+header{
+    background: #1954C2;
+    display: flex;
+    height: 12vh;
+}
+
+.megazord-logo-header{
+    padding: 1rem;
+    padding-left: 18.75rem;
+}
+
+.div-header{
+    padding: 0.6rem 0 0.6rem 0.6rem;
+    padding-left: 0.5rem;
+}
+
+.titulo-header{
+    text-transform: uppercase;
+    font-family: 'Robot', sans-serif;
+    font-size: 2rem;
+    color: #FFF;
+    padding: 0.6rem;
+
+}
+
+.navbar{
+    font-family: 'Sarala', sans-serif;
+    letter-spacing: 0.18rem;
+    font-size: 0.75rem;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-menu{
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.3s;
+    align-items: center;
+    padding: 0 0.6rem 0 0.6rem;
+    border-right: 0.06rem solid #FFF;
+
+}
+
+
+
+.nav-menu-first{
+    padding: 0 0 0 0.6rem;
+    transition: 0.3s;
+}
+
+
+.nav-menu-first:hover{
+    opacity: 0.7;
+}
+
+.nav-menu:hover{
+    opacity: 0.7;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-2019, .section-2021, .section-2022{
+    padding-top: 2rem;
+}
+
+.section-2022{
+    padding-bottom: 4rem;
+}
+
+.subtitulo{
+    font-size: 1.15rem;
+    font-family: 'Play', sans-serif;
+    color: #000;
+    font-style: 200;
+}
+
+.titulo{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #1954C2;
+}
+
+.textos-bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    padding-left: 3rem;
+}
+
+.texto{
+    display: flex;
+    font-size: 1.15rem;
+    letter-spacing: 0.3rem;
+    align-items: stretch;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 0.3px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.imagem-ebook-1, .imagem-ebook-2, .imagem-ebook-3{
+    grid-column-start: 1;
+    display: grid;
+}
+
+.imagem{
+    grid-column-start: 1;
+    justify-self: end;
+}
+
+.botoes{
+    display: flex;
+    gap: 2rem;
+}
+
+.botao-online{
+    background-color: #1954c200;
+    color: #1954C2;
+    border-style: solid;
+    border-color: #1954C2;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Sarala', sans-serif;
+    text-transform: uppercase;
+    box-shadow: -4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.botao-online:hover{
+    color: #FFF;
+    background-color: rgb(67, 117, 224);
+    animation: bounce 1s linear;
+}
+
+.botao-download{
+    background-color: #1954C2;
+    display: inline-block;
+    padding: 1.15rem 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.15rem;
+    font-family: 'Sarala', sans-serif;
+    text-transform: uppercase;
+    box-shadow: -4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.botao-download:hover{
+    background-color: rgba(67, 117, 224);
+    animation: bounce 1s linear;
+}
+
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background: #1954C2;
+    height: 12vh;
+    padding: 1rem;
+}
+
+
+.contato{
+    font-size: 1.15rem;
+    color: #FFF;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0.03rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.icons-footer{
+    letter-spacing: 0.25rem;
+}
+
+.adsense{
+    font-size: 1.15rem;
+    color: #FFF;
+    font-family: 'Play',sans-serif;
+    letter-spacing: 0.03rem;
+}
+
+
+@keyframes bounce{
+    20%{
+        transform: translate3d(2px, -4px, 0);
+    }
+    50%{
+        transform: translate3d(0, 0, 0);
+    }
+    80%{
+        transform: translate3d(-2px, 4px, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
+}

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Roboto:ital,wght@0,400;1,700&family=Sarala:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(/fotos/Vetormegazord.jpg) no-repeat center center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+header{
+    background: #1954C2;
+    display: flex;
+    height: 12vh;
+}
+
+.megazord-logo-header{
+    padding: 1rem;
+    padding-left: 18.75rem;
+}
+
+.div-header{
+    padding: 0.6rem 0 0.6rem 0.6rem;
+    padding-left: 0.5rem;
+}
+
+.titulo-header{
+    text-transform: uppercase;
+    font-family: 'Robot', sans-serif;
+    font-size: 2rem;
+    color: #FFF;
+    padding: 0.6rem;
+
+}
+
+.navbar{
+    font-family: 'Sarala', sans-serif;
+    letter-spacing: 0.18rem;
+    font-size: 0.75rem;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-menu{
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.3s;
+    align-items: center;
+    padding: 0 0.6rem 0 0.6rem;
+    border-right: 0.06rem solid #FFF;
+
+}
+
+
+
+.nav-menu-first{
+    padding: 0 0 0 0.6rem;
+    transition: 0.3s;
+}
+
+
+.nav-menu-first:hover{
+    opacity: 0.7;
+}
+
+.nav-menu:hover{
+    opacity: 0.7;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 19vh 15vh;
+    justify-items: center;
+}
+
+.titulo-main{
+    padding-top: 4rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 2rem;
+    font-family:'Roboto', sans-serif;
+    color: #1954C2;
+}
+
+.texto-main{
+    margin: 0 auto;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 1.10rem;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 0.03rem;
+    line-height: 1.5rem;
+}
+
+.botao-first{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    background-color: #1954C2;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    font-family: 'Sarala', sans-serif;
+    text-transform: uppercase;
+    box-shadow: -4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.botao-first:hover{
+    background-color: rgb(67, 117, 224);
+    animation: bounce 1s linear;
+}
+
+section{
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 13vh 38vh;
+    justify-items: center;
+    padding-bottom: 2rem;
+}
+
+.titulo-section{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 2rem;
+    font-family:'Roboto', sans-serif;
+    color: #1954C2;
+}
+
+.postagens{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.botao-insta{
+    grid-column-start: 2;
+    background-color: #1954c200;
+    color: #1954C2;
+    border-style: solid;
+    border-color: #1954C2;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    font-family: 'Sarala', sans-serif;
+    text-transform: uppercase;
+    box-shadow: -4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.botao-insta:hover{
+    background-color: rgb(67, 117, 224);
+    color: #FFF;
+    animation: bounce 1s linear;
+}
+
+footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background: #1954C2;
+    height: 12vh;
+    padding: 1rem;
+}
+
+
+.contato{
+    font-size: 1.15rem;
+    color: #FFF;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0.03rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.icons-footer{
+    letter-spacing: 0.25rem;
+}
+
+.adsense{
+    font-size: 1.15rem;
+    color: #FFF;
+    font-family: 'Play',sans-serif;
+    letter-spacing: 0.03rem;
+}
+
+
+
+
+
+
+
+
+@keyframes bounce{
+    20%{
+        transform: translate3d(2px, -4px, 0);
+    }
+    50%{
+        transform: translate3d(0, 0, 0);
+    }
+    80%{
+        transform: translate3d(-2px, 4px, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+

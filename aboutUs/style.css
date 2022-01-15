@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Roboto:wght@100;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(/fotos/Vetormegazord.jpg) no-repeat center center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+header{
+    background: #1954C2;
+    display: flex;
+    height: 12vh;
+}
+
+.megazord-logo-header{
+    padding: 1rem;
+    padding-left: 18.75rem;
+}
+
+.div-header{
+    padding: 0.6rem 0 0.6rem 0.6rem;
+    padding-left: 0.5rem;
+}
+
+.titulo-header{
+    text-transform: uppercase;
+    font-family: 'Robot', sans-serif;
+    font-size: 2rem;
+    color: #FFF;
+    padding: 0.6rem;
+
+}
+
+.navbar{
+    font-family: 'Sarala', sans-serif;
+    letter-spacing: 0.18rem;
+    font-size: 0.75rem;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-menu{
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.3s;
+    align-items: center;
+    padding: 0 0.6rem 0 0.6rem;
+    border-right: 0.06rem solid #FFF;
+
+}
+
+.nav-menu-first{
+    padding: 0 0 0 0.6rem;
+    transition: 0.3s;
+}
+
+
+.nav-menu-first:hover{
+    opacity: 0.7;
+}
+
+.nav-menu:hover{
+    opacity: 0.7;
+}
+
+.aside{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 4rem;
+}
+
+
+.imagem{
+    grid-column-start: 2;
+    border-radius: 10px;
+    box-shadow: -4px 5px 4px 3px rgba(0, 0, 0, 0.25);
+
+}
+
+.team, .megazord, .awards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 22vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.awards{
+    align-items: start;
+}
+
+.titulo-time{
+    padding-top: 2rem;
+}
+
+
+.titulo-time, .titulo-megazord, .titulo-awards{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #1954C2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-items: center;
+}
+
+.texto-team, .texto-megazord{
+    font-size: 1.15rem;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 0.3px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.anos-2019, .anos-2020, .anos-2021{
+    background-color: #1954C2;
+    grid-row-start: 2;
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.anos-2019{
+    justify-self: end;
+}
+
+.anos-2021{
+    justify-self: start;
+}
+
+.nomes{
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+.titulo-ano{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+
+}
+
+.subtitulo{
+    font-size: 1.15rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+.subtitulo-2021{
+    font-size: 1.025rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+ .anos-2021:hover{
+    animation: bounce 1s linear;
+}
+
+.anos-2020:hover{
+    animation: bounce 1s linear;
+}
+.anos-2019:hover{
+    animation: bounce 1s linear;
+}
+
+
+
+
+footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background: #1954C2;
+    height: 12vh;
+    padding: 1rem;
+}
+
+
+.contato{
+    font-size: 1.15rem;
+    color: #FFF;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0.03rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.icons-footer{
+    letter-spacing: 0.25rem;
+}
+
+.adsense{
+    font-size: 1.15rem;
+    color: #FFF;
+    font-family: 'Play',sans-serif;
+    letter-spacing: 0.03rem;
+}
+
+
+
+
+
+
+
+
+@keyframes bounce{
+    20%{
+        transform: translate3d(2px, -4px, 0);
+    }
+    50%{
+        transform: translate3d(0, 0, 0);
+    }
+    80%{
+        transform: translate3d(-2px, 4px, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
+}

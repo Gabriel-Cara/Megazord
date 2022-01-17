@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Play&family=Roboto:wght@100;700&display=swap');
-
-*{
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Roboto:ital,wght@0,400;1,700&family=Sarala:wght@400;700&display=swap');
+* {
     margin: 0;
     padding: 0;
 }
@@ -15,29 +14,27 @@ a{
     color: #FFF;
 }
 
+
+/*HEADER*/
+
 header{
-    background: #1954C2;
+    background-color: #1954C2;
     display: flex;
-    height: 12vh;
+    min-height: 12vh;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.megazord-logo-header{
-    padding: 1rem;
-    padding-left: 18.75rem;
-}
-
-.div-header{
-    padding: 0.6rem 0 0.6rem 0.6rem;
-    padding-left: 0.5rem;
+.esquerda-header{
+    display: flex;
+    align-items: center;
 }
 
 .titulo-header{
-    text-transform: uppercase;
+    font-style: bold;
+    font-size: 1.5rem;
     font-family: 'Robot', sans-serif;
-    font-size: 2rem;
     color: #FFF;
-    padding: 0.6rem;
-
 }
 
 .navbar{
@@ -49,6 +46,7 @@ header{
 .nav-list{
     display: flex;
     list-style: none;
+    justify-content: center;
 
 }
 
@@ -61,6 +59,12 @@ header{
     border-right: 0.06rem solid #FFF;
 
 }
+
+.nav-mobile-menu{
+    display: none;
+}
+
+
 
 .nav-menu-first{
     padding: 0 0 0 0.6rem;
@@ -76,53 +80,93 @@ header{
     opacity: 0.7;
 }
 
+/*CONTEUDO*/
+
+
+/*ASIDE*/
+
 .aside{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 4rem;
+    grid-template-columns: .5fr 2fr .5fr;
 }
-
 
 .imagem{
-    grid-column-start: 2;
-    border-radius: 10px;
-    box-shadow: -4px 5px 4px 3px rgba(0, 0, 0, 0.25);
-
+    display: block;
+    margin: 0 auto;
+    grid-column: 2;
+    padding-top: 4rem;
+    image-rendering:auto;
+    
 }
 
-.team, .megazord, .awards{
+
+/*SECTION*/
+
+.team, .megazord{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 22vh;
-    justify-items: center;
+    grid-template-columns: .5fr 2fr .5fr;
     align-items: center;
+    justify-items: center;
+    padding: 3rem;
+    gap: 1rem;
+
 }
 
-.awards{
-    align-items: start;
+.titulo-time, .texto-team, .titulo-megazord, .texto-megazord{
+    grid-column: 2;
 }
 
-.titulo-time{
-    padding-top: 2rem;
-}
-
-
-.titulo-time, .titulo-megazord, .titulo-awards{
-    font-size: 2rem;
+.titulo-time, .titulo-megazord{
+    font-size: 1.75rem;
     font-family: 'Roboto', sans-serif;
     color: #1954C2;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    justify-items: center;
 }
 
 .texto-team, .texto-megazord{
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-family: 'Play', sans-serif;
     letter-spacing: 0.3px;
-    grid-column-start: 2;
-    grid-row-start: 2;
 }
+
+.titulo-ano{
+    color:#FFF;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.subtitulo, .subtitulo p, .nomes, .subtitulo-2021{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+.nomes{
+    font-size: .9rem;
+}
+
+
+
+/*PREMIOS*/
+
+.awards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.titulo-awards{
+    font-size: 1.75rem;
+    font-family: 'Roboto', sans-serif;
+    color: #1954C2;
+    justify-items: center;  
+}
+
+.premios{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
 
 .anos-2019, .anos-2020, .anos-2021{
     background-color: #1954C2;
@@ -135,60 +179,16 @@ header{
     box-shadow: -4px 5px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.anos-2019{
-    justify-self: end;
-}
 
-.anos-2021{
-    justify-self: start;
-}
-
-.nomes{
-    font-size: 0.9rem;
-    font-family: 'Roboto', sans-serif;
-    color: #FFF;
-}
-
-.titulo-ano{
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    color: #FFF;
-
-}
-
-.subtitulo{
-    font-size: 1.15rem;
-    font-family: 'Roboto', sans-serif;
-    color: #FFF;
-}
-
-.subtitulo-2021{
-    font-size: 1.025rem;
-    font-family: 'Roboto', sans-serif;
-    color: #FFF;
-}
-
- .anos-2021:hover{
-    animation: bounce 1s linear;
-}
-
-.anos-2020:hover{
-    animation: bounce 1s linear;
-}
-.anos-2019:hover{
-    animation: bounce 1s linear;
-}
-
-
-
+/*FOOTER*/
 
 footer {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
     background: #1954C2;
-    height: 12vh;
     padding: 1rem;
 }
 
@@ -206,12 +206,19 @@ footer {
     letter-spacing: 0.25rem;
 }
 
+.icons-footer p{
+    display: none;
+}
+
 .adsense{
-    font-size: 1.15rem;
     color: #FFF;
+    font-size: 1.15rem;
     font-family: 'Play',sans-serif;
     letter-spacing: 0.03rem;
+    flex-wrap: nowrap;
+    max-width: 125px;
 }
+
 
 
 
@@ -224,6 +231,8 @@ footer {
         overflow-x: hidden;
     }
 
+    /*HEADER*/
+
     .megazord-logo-header{
         display: none;
     }
@@ -231,6 +240,12 @@ footer {
     .titulo-header{
         font-size: 1.15rem;
         font-family: 'Play', sans-serif;
+    }
+
+    .section .postagens, .botao-insta{
+        display: grid;
+        grid-template-columns: 1fr;
+
     }
 
     .mobile-menu{
@@ -299,21 +314,19 @@ footer {
     .mobile-menu.active .line3{
         transform: rotate(45deg) translate(-5px, -7px);
     }
-
     
-    
-    .section .postagens, .botao-insta{
-        display: grid;
-        grid-template-columns: 1fr;
 
+    .imagem, .awards{
+        padding: 3rem 10px;
     }
-    
 
 }
 
 @media (max-width: 706px){
 
-    header, main, section, footer{
+    /*SITE*/
+
+    header, footer{
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -322,22 +335,8 @@ footer {
         display: flex;
     }
 
-    section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .titulo-section{
-        grid-column-start: 1;
-    }
-
-    .postagens{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column-start: 0;
-    }
-
+    /*FOOTER*/
 
 
     footer{
@@ -414,6 +413,9 @@ footer {
 
 @media (max-width: 500px){
 
+
+    /*FOOTER*/
+
     .contato,   .icons-footer p, .icons-footer p strong, .adsense{
         font-size: 0.75rem;
     }
@@ -423,13 +425,7 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
+/*ANIMAÇÃO DOS BOTÕES*/
 
 @keyframes bounce{
     20%{
@@ -445,6 +441,9 @@ footer {
         transform: translate3d(0, 0, 0);
     }
 }
+
+
+/*ANIMAÇÃO DA NAV*/
 
 @keyframes navLinkFade {
     from {

@@ -90,13 +90,17 @@ header{
     grid-template-columns: .5fr 2fr .5fr;
 }
 
-.imagem{
+.imagem-desk{
     display: block;
     margin: 0 auto;
     grid-column: 2;
     padding-top: 4rem;
     image-rendering:auto;
     
+}
+
+.imagem-mobile{
+    display: none;
 }
 
 
@@ -223,7 +227,7 @@ footer {
 
 
 
-
+/*VERSÃO MOBILE*/
 
 @media (max-width: 1010px){
 
@@ -316,10 +320,29 @@ footer {
     }
     
 
-    .imagem, .awards{
-        padding: 3rem 10px;
+    /*ASIDE*/
+
+    .imagem-desk{
+        display: none;
     }
 
+    .aside{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 3rem 2rem ;
+    }
+
+    .imagem-mobile{
+        display: initial;
+    }
+
+
+    /*PREMIOS*/
+
+    .awards{
+        padding: 3rem 2rem;
+    }
 }
 
 @media (max-width: 706px){
@@ -334,6 +357,9 @@ footer {
     header{
         display: flex;
     }
+
+
+
 
 
     /*FOOTER*/

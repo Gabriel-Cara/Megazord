@@ -183,8 +183,16 @@ header{
     box-shadow: -4px 5px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.anos-2019, .anos-2020, .anos-2021{
-    animation: bounce 1s linear;
+.anos-2019:hover{
+    animation: bounce .7s linear;
+}
+
+.anos-2020:hover{
+    animation: bounce .7s linear;
+}
+
+.anos-2021:hover{
+    animation: bounce .7s linear;
 }
 
 
@@ -199,7 +207,6 @@ footer {
     background: #1954C2;
     padding: 1rem;
 }
-
 
 .contato{
     font-size: 1.15rem;

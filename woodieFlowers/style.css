@@ -1,6 +1,58 @@
 
 
-*{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Roboto:ital,wght@0,400;1,700&family=Sarala:wght@400;700&display=swap');
+* {
     margin: 0;
     padding: 0;
 }
@@ -12,31 +64,30 @@ body{
 
 a{
     text-decoration: none;
+    color: #FFF;
 }
+
+
+/*HEADER*/
 
 header{
-    background: #1954C2;
+    background-color: #1954C2;
     display: flex;
-    height: 12vh;
+    min-height: 12vh;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.megazord-logo-header{
-    padding: 1rem;
-    padding-left: 18.75rem;
-}
-
-.div-header{
-    padding: 0.6rem 0 0.6rem 0.6rem;
-    padding-left: 0.5rem;
+.esquerda-header{
+    display: flex;
+    align-items: center;
 }
 
 .titulo-header{
-    text-transform: uppercase;
+    font-style: bold;
+    font-size: 1.5rem;
     font-family: 'Robot', sans-serif;
-    font-size: 2rem;
     color: #FFF;
-    padding: 0.6rem;
-
 }
 
 .navbar{
@@ -48,9 +99,9 @@ header{
 .nav-list{
     display: flex;
     list-style: none;
+    justify-content: center;
 
 }
-
 
 .nav-menu{
     color: #FFF;
@@ -62,12 +113,8 @@ header{
 
 }
 
-.nav-menu a{
-    color: #FFF;
-}
-
-.nav-menu-first a{
-    color: #FFF;
+.nav-mobile-menu{
+    display: none;
 }
 
 
@@ -86,42 +133,89 @@ header{
     opacity: 0.7;
 }
 
+/*CONTEUDO*/
+
+/*ESTILIZAÇÃO ASIDE*/
+
 .aside{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    grid-template-columns: .5fr 1fr .5fr;
+    align-items: center;
+    justify-items: center;
+    padding: 3rem 2rem;
 }
 
-.titulo-aside, .quadro-fotos-time, .botao-woodie-flowers{
-    grid-column-start: 2;
-    justify-self: center;
-}
-
-.titulo-aside{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+.titulo{
+    font: 700 1.8rem 'Roboto', sans-serif;
+    padding: 1rem;
     color: #1954C2;
 }
 
+.imagem-mobile{
+    display: none;
+}
+
+
 .botao-woodie-flowers{
-    grid-row-start: 3;
+    grid-column-start: 2;
     background-color: #1954c200;
     color: #1954C2;
     border-style: solid;
     border-color: #1954C2;
     display: inline-block;
-    padding: 1rem 1.5rem;
+    margin: 2rem;
+    padding: 1rem 2.5rem;
     border-radius: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-family: 'Sarala', sans-serif;
     text-transform: uppercase;
     box-shadow: -4px 5px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .botao-woodie-flowers:hover{
+    background-color: rgb(67, 117, 224);
     color: #FFF;
+    animation: bounce 1s linear;
+}
+
+/*DIMENSÕES ASIDE*/
+
+.titulo{
+    grid-column: 2;
+    padding: 2rem 2rem;
+}
+
+.imagem-desk{
+    grid-column: 2;
+    padding: 2rem 2rem;
+}
+
+.botao-woodie-flowers{
+    padding: 2rem 2rem;
+}
+
+
+
+/*ESTILIZAÇÃO SECTION*/
+
+
+.imagem{
+    border-radius: 1rem;
+}
+
+.botao-download{
+    grid-column-start: 2;
+    background-color: #1954C2;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    font-family: 'Sarala', sans-serif;
+    text-transform: uppercase;
+    box-shadow: -4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.botao-download:hover{
     background-color: rgb(67, 117, 224);
     animation: bounce 1s linear;
 }
@@ -130,87 +224,34 @@ header{
 
 
 
+/*DIMENSIONAMENTO SECTION*/
+
 section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 4vh 30vh 4vh;
-    justify-items: center;
-    padding-bottom: 4rem;
+    padding: 2rem;
 }
 
-.titulo{
-    grid-row-start: 1;
-    font-size: 1.5rem;
-    font-family: 'Robot', sans-serif;
-    color: #1954C2;
-    align-items: center;
-
-}
-
-.imagem{
-    grid-row-start: 2;
-    border-radius: 1rem;
-}
-
-.botao-download{
-    grid-row-start: 3;
-    background-color: #1954C2;
-    color: #FFF;
-    display: inline-block;
-    padding: 1.15rem 2.5rem;
-    border-radius: 1rem;
-    font-size: 1.15rem;
-    font-family: 'Sarala', sans-serif;
-    text-transform: uppercase;
-    box-shadow: -4px 5px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.botao-download:hover{
-    background-color: rgba(67, 117, 224);
-    animation: bounce 1s linear;
-}
-
-.jogo-de-cartas{
+.jogo-de-cartas, .super-trunfo, .exercicios-matematica{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-}
-
-.super-trunfo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.exercicios-matematica{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    gap: 1.7rem;
 }
 
 
 
-
-
-
-
-
-
-
-
+/*FOOTER*/
 
 
 
 footer {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
     background: #1954C2;
-    height: 12vh;
     padding: 1rem;
 }
 
@@ -228,16 +269,272 @@ footer {
     letter-spacing: 0.25rem;
 }
 
+.icons-footer p{
+    display: none;
+}
+
 .adsense{
-    font-size: 1.15rem;
     color: #FFF;
+    font-size: 1.15rem;
     font-family: 'Play',sans-serif;
     letter-spacing: 0.03rem;
+    flex-wrap: nowrap;
+    max-width: 125px;
 }
 
 
 
+/*VERSÃO MOBILE*/
 
+
+/*VERSÃO COM 1010PX*/
+
+
+
+@media (max-width: 1010px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /*HEADER*/
+
+    .megazord-logo-header{
+        display: none;
+    }
+
+    .titulo-header{
+        font-size: 1.15rem;
+        font-family: 'Play', sans-serif;
+    }
+
+    .mobile-menu{
+        cursor: pointer;
+    }
+
+    .nav-desk{
+        display: none;
+    }
+
+    .nav-mobile-menu{
+        display: flex;
+    }
+
+
+    .mobile-menu div{
+        width: 32px;
+        height: 2px;
+        background: #FFF;
+        margin: 8px;
+        transition: 0.3s;
+    }
+
+    .nav-list{
+        position:absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #1954C2;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding: 0.3rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li{
+        padding: 0;
+        opacity: 0;
+    }
+
+    .nav-menu{
+        border-right: 0px;
+    }
+
+    .mobile-menu{
+        display: block;
+
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+
+    .mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+
+    }
+
+    .mobile-menu.active .line2{
+        opacity: 0;
+    }
+    
+    .mobile-menu.active .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+
+
+    /*CONTEÚDO*/
+
+
+
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 0;
+        gap: 1rem;
+    }
+}
+
+
+
+    /*VERSÃO COM 750PX*/
+
+
+
+    @media (max-width: 800px){
+
+        /*SITE*/
+    
+        header, .aside, section, footer{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    
+        header{
+            display: flex;
+        }
+    
+        
+
+        /*CONTEÚDO*/
+    
+
+
+        /*ASIDE*/
+
+
+
+        .imagem-desk{
+            display: none;
+        }
+
+        .imagem-mobile{
+            display: initial;
+            border-radius: 1rem;
+            padding: .7rem;
+            grid-column: 1;
+        }
+
+        .aside{
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        
+        /*FOOTER*/
+    
+    
+        footer{
+            display: flex;
+            background-color: #1954C2;
+            justify-content: space-around;
+        }
+    
+    
+        .contato{
+            flex-wrap: nowrap;
+        }
+    
+        .esquerda-footer{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+        }
+    
+        .meio-footer{
+            display: none;
+        }
+    
+        .direita-footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+    
+        .icons-footer p{
+            display: flex;
+            font: bold 1rem 'Roboto', sans-serif;
+        }
+    
+        strong{
+            font: bold 1rem 'Roboto', sans-serif;
+            flex-wrap: nowrap;
+        }
+    
+        .instagram:hover{
+            color: #ff00aa  ;
+        }
+    
+        .facebook:hover{
+            color: #0b0d13;
+        }
+    
+        .a, .TIK:hover{
+            color: #000;
+        }
+    
+        .a, .TOK:hover{
+            color: #EE1D52;
+        }
+    
+        .youtube:hover{
+            color: #FF0000;
+        }
+    
+        .icons-footer img{
+            display: none;
+        }
+        
+        .senai-logo, .sesi-logo{
+            display: none;
+        }
+    
+        .adsense{
+            flex-wrap: wrap;
+        }
+    
+    }
+
+
+
+    /*VERSÃO COM 500PX*/
+    
+
+
+    @media (max-width: 500px){
+    
+    
+        /*FOOTER*/
+    
+        .contato,   .icons-footer p, .icons-footer p strong, .adsense{
+            font-size: 0.75rem;
+        }
+    
+        .logos-footer{
+            display: none;
+        }
+    }
+
+
+
+    /*ANIMAÇÃO DOS BOTÕES*/
+    
 
 
 
@@ -249,9 +546,24 @@ footer {
         transform: translate3d(0, 0, 0);
     }
     80%{
-        transform: translate3d(-2px, 4px, 0);
+        transform: translate3d(-2px, 4px, 0);        
     }
     100%{
         transform: translate3d(0, 0, 0);
     }
+}
+    
+    
+/*ANIMAÇÃO DA NAV*/
+    
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+        
 }

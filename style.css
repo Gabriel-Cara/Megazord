@@ -302,6 +302,10 @@ footer {
 }
 
 @media (max-width: 706px){
+    
+    body{
+        overflow-x: hidden;
+    }
 
     header, main, section, footer{
         display: grid;

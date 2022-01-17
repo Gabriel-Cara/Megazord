@@ -98,6 +98,7 @@ main{
     margin: 0 auto;
     grid-column-start: 2;
     grid-row-start: 2;
+    padding: 1rem;
     font-size: 1.10rem;
     font-family: 'Play', sans-serif;
     letter-spacing: 0.03rem;

@@ -7,6 +7,15 @@
     <meta name="viewport" content="width= 1, initial-scale=1.0">
     <title>Megazord 7563 | Brazilian Robotic Team | About Us</title>
     <link rel="stylesheet" href="style.css">
+    <script> 
+        function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "flex")
+            document.getElementById(el).style.display = 'none';
+        else
+            document.getElementById(el).style.display = 'flex';
+    }
+    </script>
 </head>
 
 <body>
@@ -19,7 +28,7 @@
         </div>
 
         <nav class="navbar">
-            <div class="mobile-menu">
+            <div class="mobile-menu" onclick="Mudarestado('minhaDiv')">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
